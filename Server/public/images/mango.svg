@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF3C7"/>
+      <stop offset="100%" stop-color="#FDE68A"/>
+    </linearGradient>
+    <radialGradient id="mango" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="45%" stop-color="#F59E0B"/>
+      <stop offset="85%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#DC2626"/>
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="15" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <ellipse cx="205" cy="235" rx="90" ry="16" fill="#D97706" opacity="0.2"/>
+  <g filter="url(#shadow)">
+    <!-- Mango body -->
+    <path d="M 200 95 C 150 90, 120 140, 135 190 C 150 230, 210 235, 255 210 C 290 190, 280 130, 240 100 C 220 85, 210 90, 200 95 Z" fill="url(#mango)"/>
+    <!-- Stem -->
+    <path d="M 200 95 Q 195 75 190 60" stroke="#78350F" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <!-- Leaf -->
+    <path d="M 195 75 Q 230 60 240 75 Q 220 90 195 75 Z" fill="#16A34A"/>
+    <!-- Highlight -->
+    <ellipse cx="170" cy="135" rx="20" ry="40" transform="rotate(-20 170 135)" fill="#FFF" opacity="0.3"/>
+  </g>
+  <text x="200" y="270" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#B45309" text-anchor="middle" letter-spacing="1">ALPHONSO MANGO</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF9C3"/>
+      <stop offset="100%" stop-color="#FEF08A"/>
+    </linearGradient>
+    <linearGradient id="banana" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#84CC16"/>
+      <stop offset="25%" stop-color="#FACC15"/>
+      <stop offset="70%" stop-color="#EAB308"/>
+      <stop offset="100%" stop-color="#CA8A04"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="15" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <ellipse cx="200" cy="235" rx="100" ry="16" fill="#CA8A04" opacity="0.2"/>
+  <g filter="url(#shadow)">
+    <!-- Banana curve -->
+    <path d="M 120 110 C 130 190, 210 230, 290 180 C 270 200, 180 205, 135 150 C 125 135, 120 120, 120 110 Z" fill="url(#banana)"/>
+    <!-- Stem tip -->
+    <path d="M 120 110 Q 115 100 110 95" stroke="#4D7C0F" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <!-- End tip -->
+    <circle cx="290" cy="180" r="4" fill="#713F12"/>
+    <!-- Ridge lines -->
+    <path d="M 128 120 C 140 180, 205 210, 280 180" stroke="#EAB308" stroke-width="2" fill="none" opacity="0.6"/>
+  </g>
+  <text x="200" y="270" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#A16207" text-anchor="middle" letter-spacing="1">FRESH BANANAS</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ECFDF5"/>
+      <stop offset="100%" stop-color="#D1FAE5"/>
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <ellipse cx="200" cy="235" rx="80" ry="14" fill="#047857" opacity="0.15"/>
+  <g filter="url(#shadow)">
+    <!-- Farm Icon / Sprout -->
+    <path d="M 200 220 V 130" stroke="#047857" stroke-width="8" stroke-linecap="round"/>
+    <path d="M 200 160 C 160 160, 140 120, 150 90 C 180 90, 200 120, 200 160 Z" fill="url(#leafGrad)"/>
+    <path d="M 200 140 C 240 140, 260 100, 250 70 C 220 70, 200 100, 200 140 Z" fill="url(#leafGrad)"/>
+    <circle cx="200" cy="225" r="8" fill="#047857"/>
+  </g>
+  <text x="200" y="270" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#065F46" text-anchor="middle" letter-spacing="1">FARM FRESH PRODUCE</text>
+</svg>

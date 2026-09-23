@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF9C3"/>
+      <stop offset="100%" stop-color="#FEF08A"/>
+    </linearGradient>
+    <radialGradient id="corn" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="70%" stop-color="#EAB308"/>
+      <stop offset="100%" stop-color="#CA8A04"/>
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="15" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <ellipse cx="200" cy="240" rx="90" ry="16" fill="#CA8A04" opacity="0.2"/>
+  <g filter="url(#shadow)">
+    <!-- Husk leaves -->
+    <path d="M 170 230 C 130 190, 120 120, 160 80 C 145 130, 160 180, 180 230 Z" fill="#65A30D"/>
+    <path d="M 230 230 C 270 190, 280 120, 240 80 C 255 130, 240 180, 220 230 Z" fill="#65A30D"/>
+    <!-- Cob -->
+    <path d="M 175 110 C 170 70, 230 70, 225 110 L 220 220 C 220 235, 180 235, 180 220 Z" fill="url(#corn)"/>
+    <!-- Kernels grid lines -->
+    <path d="M 183 90 H 217 M 180 110 H 220 M 178 130 H 222 M 178 150 H 222 M 180 170 H 220 M 180 190 H 220 M 182 210 H 218" stroke="#A16207" stroke-width="2" opacity="0.5"/>
+    <path d="M 193 85 V 225 M 207 85 V 225" stroke="#A16207" stroke-width="2" opacity="0.5"/>
+  </g>
+  <text x="200" y="275" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#854D0E" text-anchor="middle" letter-spacing="1">SWEET CORN</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF3C7"/>
+      <stop offset="100%" stop-color="#FDE68A"/>
+    </linearGradient>
+    <radialGradient id="potato" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#D4A373"/>
+      <stop offset="70%" stop-color="#A97142"/>
+      <stop offset="100%" stop-color="#804E27"/>
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="15" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <ellipse cx="200" cy="235" rx="110" ry="18" fill="#D97706" opacity="0.15"/>
+  <g filter="url(#shadow)">
+    <!-- Potato Body -->
+    <path d="M 120 150 C 110 110, 150 85, 210 90 C 270 95, 300 130, 290 170 C 280 210, 240 230, 180 225 C 130 220, 125 180, 120 150 Z" fill="url(#potato)"/>
+    <!-- Potato Eyes/Spots -->
+    <circle cx="160" cy="130" r="4" fill="#603813" opacity="0.6"/>
+    <circle cx="230" cy="120" r="3" fill="#603813" opacity="0.6"/>
+    <circle cx="250" cy="160" r="4" fill="#603813" opacity="0.6"/>
+    <circle cx="190" cy="175" r="3" fill="#603813" opacity="0.6"/>
+    <circle cx="150" cy="180" r="3.5" fill="#603813" opacity="0.6"/>
+    <path d="M 215 140 Q 225 145 220 150" stroke="#603813" stroke-width="2" fill="none" opacity="0.5" stroke-linecap="round"/>
+  </g>
+  <text x="200" y="270" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#92400E" text-anchor="middle" letter-spacing="1">FRESH POTATO</text>
+</svg>

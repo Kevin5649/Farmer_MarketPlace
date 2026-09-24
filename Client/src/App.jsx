@@ -32,6 +32,7 @@ import AdminCategoriesPage from './pages/admin/AdminCategoriesPage';
 import AdminUsersPage from './pages/admin/AdminUsersPage';
 import AdminOrdersPage from './pages/admin/AdminOrdersPage';
 import AdminOrderDetailPage from './pages/admin/AdminOrderDetailPage';
+import AdminProfilePage from './pages/admin/AdminProfilePage';
 
 // Farmer layout wrapper
 import FarmerLayout from './layouts/FarmerLayout';
@@ -138,6 +139,7 @@ function App() {
                   }
                 >
                   <Route index element={<AdminDashboard />} />
+                  <Route path="profile" element={<AdminProfilePage />} />
                   <Route path="products" element={<AdminProductsPage />} />
                   <Route path="categories" element={<AdminCategoriesPage />} />
                   <Route path="users" element={<AdminUsersPage />} />

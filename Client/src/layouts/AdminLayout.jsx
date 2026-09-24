@@ -9,6 +9,9 @@ const AdminLayout = () => {
           <NavLink to="/admin" end className={({ isActive }) => `sidebar-link ${isActive ? 'active' : ''}`}>
             <span className="icon">📊</span> Dashboard
           </NavLink>
+          <NavLink to="/admin/profile" className={({ isActive }) => `sidebar-link ${isActive ? 'active' : ''}`}>
+            <span className="icon">👤</span> Profile
+          </NavLink>
         </div>
         <div className="sidebar-section">
           <div className="sidebar-section-label">Catalog</div>
